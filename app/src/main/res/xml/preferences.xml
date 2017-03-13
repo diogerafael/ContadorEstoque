@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notificações">
+        <EditTextPreference
+            android:key="notificar_nao_cadastrado"
+            android:title="Alertar produto não cadastrado"
+            android:summary="Vibrar duas vezes ao realizar a leitura de um produto não cadastrado"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="VIBRAÇÃO">
+        <CheckBoxPreference android:key="vibrar_ao_ler_codigo"
+            android:title=""/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".principal.Consultar" />
-        <activity android:name=".principal.Configuracao"></activity>
-
+        <activity android:name=".principal.Configuracao" />
+        <activity android:name=".principal.ExportarActivity"></activity>
     </application>
 
 </manifest>

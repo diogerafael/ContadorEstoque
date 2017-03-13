@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
 
             android:id="@+id/button"
-            android:background="@drawable/abc_ic_search_api_mtrl_alpha" />
+             />
 
         <ImageView
             android:layout_width="wrap_content"

@@ -23,6 +23,7 @@
         </activity>
         <activity android:name="diogenes.br.com.contadorestoque.principal.Consultar" />
         <activity android:name="diogenes.br.com.contadorestoque.principal.Configuracao" />
+        <activity android:name="diogenes.br.com.contadorestoque.principal.ExportarActivity" />
     </application>
 
 </manifest>

@@ -1,61 +1,88 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:3:5-46
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:3:5-46
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:5:5-21:19
-MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:22:5-20
+ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:5:5-21:19
+MERGED from [com.android.support:design:25.2.0] C:\Users\dioge\.android\build-cache\eb56069837e9399616e43584ce0fbbc10e48e4cb\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:transition:25.2.0] C:\Users\dioge\.android\build-cache\a965efac768d5089ad95c0a29c23e577bbf744bc\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\dioge\.android\build-cache\521f7918c3b05582abdf035808d5f7eb3919a659\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\dioge\.android\build-cache\c6de7510ae1e1347e488dcaa2a59ae4a174a0f3c\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\dioge\.android\build-cache\6f30494ac5e5a175f4620e7020b275b45e41320f\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\dioge\.android\build-cache\caae74672f300f438441a56f296dc5c28c6dfd98\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\dioge\.android\build-cache\86299d4c9b344dc0964c575ab3ce440b2a38c7fe\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\dioge\.android\build-cache\fb20e4221090b0933a8cbad8e98a1e7e14e1e4df\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\dioge\.android\build-cache\3440de11a953288c7e5ca86e5c004db30aac7925\output\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\dioge\.android\build-cache\080cb468f64556d56bce9b7f2b3658610e071283\output\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\dioge\.android\build-cache\3a028927a6f30565cc6613d0e73c144df8be45d0\output\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha3] C:\Users\dioge\.android\build-cache\7147f8bf6154f72255db67b7e3a4ab9c0f468a78\output\AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:9:9-35
 	android:allowBackup
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:7:9-43
 	android:theme
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:10:9-40
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:10:9-40
 activity#diogenes.br.com.contadorestoque.principal.MainActivity
-ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:11:9-17:20
+ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:11:9-17:20
 	android:name
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:11:19-57
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:11:19-57
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:12:13-16:29
+ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:12:13-16:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:13:17-69
+ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:13:17-69
 	android:name
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:13:25-66
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:13:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:15:17-77
+ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:15:27-74
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:15:27-74
 activity#diogenes.br.com.contadorestoque.principal.Consultar
-ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:18:9-57
+ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:18:9-57
 	android:name
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:18:19-54
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:18:19-54
 activity#diogenes.br.com.contadorestoque.principal.Configuracao
-ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:19:9-69
+ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:19:9-60
 	android:name
-		ADDED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml:19:19-57
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:19:19-57
+activity#diogenes.br.com.contadorestoque.principal.ExportarActivity
+ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:20:9-73
+	android:name
+		ADDED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml:20:19-61
 uses-sdk
-INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:22.2.1] C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.1\AndroidManifest.xml:20:5-43
+INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:25.2.0] C:\Users\dioge\.android\build-cache\eb56069837e9399616e43584ce0fbbc10e48e4cb\output\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:recyclerview-v7:25.2.0] C:\Users\dioge\.android\build-cache\4b6077ccfe5c61a709dceaa0f877fe0a1cde9e3d\output\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.2.0] C:\Users\dioge\.android\build-cache\a965efac768d5089ad95c0a29c23e577bbf744bc\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:25.2.0] C:\Users\dioge\.android\build-cache\521f7918c3b05582abdf035808d5f7eb3919a659\output\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:25.2.0] C:\Users\dioge\.android\build-cache\c6de7510ae1e1347e488dcaa2a59ae4a174a0f3c\output\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] C:\Users\dioge\.android\build-cache\6f30494ac5e5a175f4620e7020b275b45e41320f\output\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] C:\Users\dioge\.android\build-cache\caae74672f300f438441a56f296dc5c28c6dfd98\output\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] C:\Users\dioge\.android\build-cache\86299d4c9b344dc0964c575ab3ce440b2a38c7fe\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] C:\Users\dioge\.android\build-cache\fb20e4221090b0933a8cbad8e98a1e7e14e1e4df\output\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] C:\Users\dioge\.android\build-cache\3440de11a953288c7e5ca86e5c004db30aac7925\output\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] C:\Users\dioge\.android\build-cache\080cb468f64556d56bce9b7f2b3658610e071283\output\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:25.2.0] C:\Users\dioge\.android\build-cache\3a028927a6f30565cc6613d0e73c144df8be45d0\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support.constraint:constraint-layout:1.0.0-alpha3] C:\Users\dioge\.android\build-cache\7147f8bf6154f72255db67b7e3a4ab9c0f468a78\output\AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.2.0] C:\Users\dioge\.android\build-cache\eb56069837e9399616e43584ce0fbbc10e48e4cb\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Diogenes\Documents\Mega\ContadorEstoque\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml
+		INJECTED from E:\Projetos\ContadorEstoque\app\src\main\AndroidManifest.xml

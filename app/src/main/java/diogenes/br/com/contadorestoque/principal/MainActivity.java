@@ -42,7 +42,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
             startActivity(in);
         }
         if (view.getId()==btnExportar.getId()){
-
+            in = new Intent(this,ExportarActivity.class);
+            startActivity(in);
         }
     }
 }

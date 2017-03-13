@@ -1,3 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\fb20e4221090b0933a8cbad8e98a1e7e14e1e4df\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a132a2659eb1a3514e4bb587cc1d4aaa9473eaec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\4b6077ccfe5c61a709dceaa0f877fe0a1cde9e3d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a8072cc54a18d1c29a7be1fb31d909938279760c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\7147f8bf6154f72255db67b7e3a4ab9c0f468a78\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="650cf8686cd625acfbdd43f8ab33f6f2f057605f">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dc166df829985beb23fdbacb18a67d6e74739058\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projetos\ContadorEstoque\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_832234f6f85a1ece179ee45cf0f76931cc7ec9ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\86299d4c9b344dc0964c575ab3ce440b2a38c7fe\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0e04dc8c156afa5599d0464d14c94146c6ea293d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\caae74672f300f438441a56f296dc5c28c6dfd98\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_700f6177b1d062c07fcf042b847488f1ef10433a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\c6de7510ae1e1347e488dcaa2a59ae4a174a0f3c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_371dcac89da4dc7732443e98adcdb69d2c4a9dec\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\Documents\sdk1\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.0-alpha3\constraint-layout-solver-1.0.0-alpha3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="977d57354ef7ef4faa604b802d4907728e0db889">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.0-alpha3_5c67b0258cf4d6f31ff00ef09b0a4d77cff63a1f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\3440de11a953288c7e5ca86e5c004db30aac7925\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9e63a9f51511d7a57e59017c7d1b780d4ab79b92\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\Projetos\ContadorEstoque\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b192c3caa02b2f78c41b5b6d857e95be8d80623e">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9220a4ce6bd7474169e7314d5765459812ad0a79\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\a965efac768d5089ad95c0a29c23e577bbf744bc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e51c2f662bb72419632af5192553c37e33890a99">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0c92129bb06e13432c4266beb1a27ab9d6f9d5df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\080cb468f64556d56bce9b7f2b3658610e071283\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_80b947f49f78dbf7f420d4f4d26e88ad25426856\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\3a028927a6f30565cc6613d0e73c144df8be45d0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_82484210bd173de09ce61fa0abf28d5c8e7fd8e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\eb56069837e9399616e43584ce0fbbc10e48e4cb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_32c1204d0b6546831a862092a829a1daaaf5760b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\Documents\sdk1\extras\android\m2repository\com\android\support\support-annotations\25.2.0\support-annotations-25.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.2.0_61d331c994d6b07f8a6955498997c7b4bbd32228\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\521f7918c3b05582abdf035808d5f7eb3919a659\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_09f2b9ff0392cc4c90bae2afdb3cf25bb944b037\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\dioge\.android\build-cache\6f30494ac5e5a175f4620e7020b275b45e41320f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="E:\Projetos\ContadorEstoque\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fac6f1a9107bbb925aa74e745ded2f35422feeda\classes.dex" />
+    </item>
+
+</items>

@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Contador Estoque</string>
+
+    <!-- Configuracao -->
+    <string name="beep">Emitir som de beep ao ler um código de barras</string>
 </resources>
