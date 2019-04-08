@@ -1,8 +1,9 @@
 package diogenes.br.com.contadorestoque.principal;
 
-import android.support.v7.app.AppCompatActivity;
+
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
 import diogenes.br.com.contadorestoque.R;
 
 public class ExportarActivity extends AppCompatActivity {

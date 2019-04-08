@@ -6,6 +6,7 @@ package diogenes.br.com.contadorestoque.model;
 public class Item {
     private Integer i;
     private String descricao;
+    private String codean;
     private Double quantidade;
 
     public Integer getI() {
@@ -30,5 +31,13 @@ public class Item {
 
     public void setQuantidade(Double quantidade) {
         this.quantidade = quantidade;
+    }
+
+    public String getCodean() {
+        return codean;
+    }
+
+    public void setCodean(String codean) {
+        this.codean = codean;
     }
 }

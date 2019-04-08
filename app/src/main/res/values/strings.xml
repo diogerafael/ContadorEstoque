@@ -3,4 +3,5 @@
 
     <!-- Configuracao -->
     <string name="beep">Emitir som de beep ao ler um código de barras</string>
+    <string name="title_activity_scan_code">ScanCodeActivity</string>
 </resources>
