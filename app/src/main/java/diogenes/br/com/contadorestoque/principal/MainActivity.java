@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view.getId() == btnContagem.getId()) {
             in = new Intent(this, Consultar.class);
             startActivity(in);
-//        }
+        }
             if (view.getId() == btnConfig.getId()) {
                 in = new Intent(this, Configuracao.class);
                 startActivity(in);
@@ -49,6 +49,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 in = new Intent(this, ExportarActivity.class);
                 startActivity(in);
             }
-        }
     }
 }

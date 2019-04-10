@@ -1,33 +1,46 @@
 package diogenes.br.com.contadorestoque.principal;
 
 import android.Manifest;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.media.AudioManager;
+import android.media.ToneGenerator;
+import android.os.Build;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.zxing.Result;
 import com.karumi.dexter.Dexter;
+import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
-import com.karumi.dexter.listener.PermissionDeniedResponse;
-import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
-import com.karumi.dexter.listener.single.PermissionListener;
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
+import diogenes.br.com.contadorestoque.dao.ItemDao;
+import diogenes.br.com.contadorestoque.model.Item;
 import me.dm7.barcodescanner.zbar.ZBarScannerView;
-import me.dm7.barcodescanner.zxing.ZXingScannerView;
 
+import android.os.VibrationEffect;
+import android.os.Vibrator;
+import android.preference.PreferenceManager;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.EditText;
+
+import java.util.List;
 
 import diogenes.br.com.contadorestoque.R;
 
 public class ScanCodeActivity extends AppCompatActivity implements ZBarScannerView.ResultHandler{
 
     ZBarScannerView scannerView;
+    Double qtd=1.0;
 
 
         @Override
@@ -36,42 +49,22 @@ public class ScanCodeActivity extends AppCompatActivity implements ZBarScannerVi
             scannerView = new ZBarScannerView(this);
             scannerView.setFlash(true);
             scannerView.setAutoFocus(true);
+            scannerView.setHorizontalFadingEdgeEnabled(true);
 
             Dexter.withActivity(this)
-                    .withPermission(Manifest.permission.CAMERA)
-                    .withListener(new PermissionListener() {
+                    .withPermissions(Manifest.permission.CAMERA,Manifest.permission.VIBRATE)
+                    .withListener(new MultiplePermissionsListener() {
                         @Override
-                        public void onPermissionGranted(PermissionGrantedResponse response) {
-                            // permission is granted, open the camera
+                        public void onPermissionsChecked(MultiplePermissionsReport report) {
                             setContentView(scannerView);
                         }
 
                         @Override
-                        public void onPermissionDenied(PermissionDeniedResponse response) {
-                            // check for permanent denial of permission
-                            if (response.isPermanentlyDenied()) {
-                            }
-                        }
+                        public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
 
-                        @Override
-                        public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {
-                            token.continuePermissionRequest();
                         }
                     }).check();
 
-
-//        setContentView(R.layout.activity_scan_code);
-//        Toolbar toolbar = findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
-//
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
     }
 
 
@@ -91,28 +84,69 @@ public class ScanCodeActivity extends AppCompatActivity implements ZBarScannerVi
         scannerView.startCamera();
     }
 
-//    @Override
-//    public void handleResult(Result rawResult) {
-//            MainActivity.result.setText(rawResult.getText());
-//        Log.v("BARCOD", rawResult.getText()); // Prints scan results
-//        Log.v("BARCOD", rawResult.getBarcodeFormat().toString()); // Prints the scan format (qrcode, pdf417 etc.)
-//
-//        // If you would like to resume scanning, call this method below:
-//        scannerView.resumeCameraPreview(this);
-//            onBackPressed();//voltar tela anterior
-//    }
+
 
     @Override
     public void handleResult(me.dm7.barcodescanner.zbar.Result rawResult) {
-        Intent i = new Intent();
-        i.putExtra("CODEAN",rawResult.getContents());
-        setResult(1, i);
 
-        Log.v("BARCOD", rawResult.getContents()); // Prints scan results
-        Log.v("BARCOD", rawResult.getBarcodeFormat().toString()); // Prints the scan format (qrcode, pdf417 etc.)
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-        // If you would like to resume scanning, call this method below:
+        boolean pergun_qtd_ler = sharedPreferences.getBoolean("pergun_qtd_ler", false);
+
+
+        if (pergun_qtd_ler){
+            inputBox();
+        }
+
+
+        //inserir no banco
+        ItemDao dao = new ItemDao(this);
+        dao.save(new Item(rawResult.getContents(),qtd));
+
+        try{
+            final ToneGenerator tg = new ToneGenerator(AudioManager.STREAM_NOTIFICATION, 100);
+            tg.startTone(ToneGenerator.TONE_PROP_BEEP);
+
+            boolean vibrar = sharedPreferences.getBoolean("vibrar_ao_ler_codigo", false);
+
+            if (vibrar){
+                Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                // Vibrate for 500 milliseconds
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    v.vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE));
+                } else {
+                    //deprecated in API 26
+                    v.vibrate(100);
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         scannerView.resumeCameraPreview(this);
-        finish();
+
     }
+
+
+    private void inputBox(){
+        LayoutInflater layoutInflaterAndroid = LayoutInflater.from(this);
+        View mView = layoutInflaterAndroid.inflate(R.layout.input_box, null);
+        AlertDialog.Builder alertDialogBuilderUserInput = new AlertDialog.Builder(this);
+        alertDialogBuilderUserInput.setView(mView);
+
+
+        final EditText userInputDialogEditText = (EditText) mView.findViewById(R.id.edtqtd);
+        alertDialogBuilderUserInput
+                .setCancelable(false)
+                .setPositiveButton("Send", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogBox, int id) {
+                         qtd= Double.valueOf(userInputDialogEditText.getText().toString());;
+                    }
+                });
+
+        AlertDialog alertDialogAndroid = alertDialogBuilderUserInput.create();
+        alertDialogAndroid.show();
+    }
+
 }

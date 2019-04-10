@@ -21,7 +21,7 @@ public class DBHelper extends SQLiteOpenHelper{
 
     private final Context context;
     private static final String DATABASE_NAME = "estoque";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 1;
     private static final String TAG = "Todos";
 
 
@@ -34,7 +34,6 @@ public class DBHelper extends SQLiteOpenHelper{
 
     @Override
     public void onCreate(SQLiteDatabase db){
-        //carregaDB();
         criarBanco(db);
     }
 
@@ -50,14 +49,16 @@ public class DBHelper extends SQLiteOpenHelper{
      * @param db
      */
     public void criarBanco(SQLiteDatabase db){
-        StringBuilder sql = new StringBuilder();
-        sql.append(" CREATE TABLE [item] ( ");
-        sql.append("[id] INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT,");
-        sql.append("[codean] varchar(20),");
-        sql.append("[descricao] varchar(50),");
-        sql.append("[quantidade] decimal(16,2)");
-
-        db.execSQL(sql.toString());
+        try{
+            StringBuilder sql = new StringBuilder();
+            sql.append(" CREATE TABLE [item] ( ");
+            sql.append("[id] INTEGER PRIMARY KEY ON CONFLICT ROLLBACK AUTOINCREMENT,");
+            sql.append("[codean] varchar(20),");
+            sql.append("[quantidade] decimal(16,2) )");
+            db.execSQL(sql.toString());
+        }catch (Exception e){
+            Log.e("erro",e.getMessage());
+        }
     }
 
     @SuppressLint("SdCardPath")

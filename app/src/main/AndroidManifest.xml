@@ -3,6 +3,7 @@
     package="diogenes.br.com.contadorestoque">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +14,8 @@
         <activity
             android:name=".principal.ScanCodeActivity"
             android:label="@string/title_activity_scan_code"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="userLandscape"
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".principal.MainActivity">
             <intent-filter>

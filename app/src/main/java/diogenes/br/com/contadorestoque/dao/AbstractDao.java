@@ -43,8 +43,9 @@ public abstract class  AbstractDao {
     /**********************************************************
      * Metodo: Open; Abre uma conexao com esse context no sqlite
      */
-    public void open(){
+    public void open(Context context){
         try{
+            this.openHelper = new DBHelper(context);
             this.dataBase = this.openHelper.getWritableDatabase();
         }catch(SQLException e){
             e.printStackTrace();

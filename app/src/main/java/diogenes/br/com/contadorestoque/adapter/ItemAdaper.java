@@ -38,7 +38,7 @@ public class ItemAdaper extends RecyclerView.Adapter<ItemAdaper.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Item bean  = lstItens.get(position);
         holder.txtcodean.setText(bean.getCodean());
-        holder.txtdescricao.setText(bean.getDescricao());
+        //holder.txtdescricao.setText(bean.getDescricao());
         holder.txtqtd.setText(bean.getQuantidade().toString());
     }
 
@@ -72,5 +72,11 @@ public class ItemAdaper extends RecyclerView.Adapter<ItemAdaper.ViewHolder> {
     public void addItem(Item item){
         this.lstItens.add(item);
         notifyDataSetChanged();
+    }
+
+    public void addAll(List<Item> items) {
+        int previousDataSize = this.lstItens.size();
+        this.lstItens.addAll(items);
+        notifyItemRangeInserted(previousDataSize, items.size());
     }
 }

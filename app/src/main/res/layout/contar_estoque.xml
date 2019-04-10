@@ -23,9 +23,18 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="New Button"
+            android:text="OK"
             android:id="@+id/btnlercodigobarras"
             />
+
+        <ImageView
+            android:id="@+id/nenhum_item_encontrado"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:src="@drawable/nenhum_item_encontrado"/>
+
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
